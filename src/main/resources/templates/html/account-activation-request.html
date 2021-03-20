@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:remove="all">User Activation Request</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+<body>
+	Dear&nbsp;
+	<span th:text="${firstName}">User</span>,
+	<br /> Thank you for signing up with us. Click the link below to activate your account.
+	<br />
+	<a th:href="@{${accountActivationLink}}">Account Activation Link</a>
+	<br />
+	<br /> Regards,
+	<br />
+	<a th:href="@{${companyWebsiteLink}}"><span th:text="${companyName}"></span></a>
+</body>
+</html>

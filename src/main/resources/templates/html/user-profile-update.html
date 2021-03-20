@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:remove="all">Profile Update</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+<body>
+	Dear&nbsp;
+	<span th:text="${firstName}">User</span>,
+	<br /> Your profile has been updated.
+	<br />
+	<br /> Regards,
+	<br />
+	<a th:href="@{${companyWebsiteLink}}"><span
+		th:text="${companyName}"></span></a>
+</body>
+</html>
